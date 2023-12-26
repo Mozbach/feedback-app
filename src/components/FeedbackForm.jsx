@@ -133,8 +133,10 @@ function FeedbackForm() {
             } else {
                 addFeedback(newFeedback);
             }
-
-            setText('')
+            setText('');
+            setBtnDisabled(true);
+        } else {
+            setMessage("Your review must have at least 10 characters.");
         }
     }
     /*
